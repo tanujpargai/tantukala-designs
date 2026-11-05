@@ -170,7 +170,7 @@ export const PatternExhibition: React.FC = () => {
       <div className="max-w-[1520px] mx-auto px-4 sm:px-8 lg:px-12 xl:px-16 relative z-10">
         {/* Section Header */}
         <div className="text-center max-w-3xl mx-auto mb-16">
-          <div className="inline-flex items-center space-x-2 px-4 py-1.5 rounded-full bg-ivory-100/10 border border-ivory-100/20 backdrop-blur-md mb-4">
+          <div className="inline-flex items-center space-x-2 mb-4">
             <Sparkles className="w-3.5 h-3.5 text-turmeric" />
             <span className="text-[11px] uppercase tracking-[0.25em] font-semibold text-turmeric">
               Interactive Curatorial Archive

@@ -30,10 +30,10 @@ export const Hero: React.FC = () => {
 
       {/* Hero Content Container */}
       <div className="relative z-10 max-w-[1520px] mx-auto px-4 sm:px-8 lg:px-12 xl:px-16 py-20 text-center text-ivory-100 flex flex-col items-center">
-        {/* Cultural Heritage Pill */}
-        <div className="inline-flex items-center space-x-2 px-4 py-1.5 rounded-full bg-ivory-100/10 border border-ivory-100/20 backdrop-blur-md mb-6 animate-in fade-in slide-in-from-bottom-4 duration-700">
+        {/* Cultural Heritage Eyebrow */}
+        <div className="inline-flex items-center space-x-2 mb-6 animate-in fade-in slide-in-from-bottom-4 duration-700">
           <Sparkles className="w-3.5 h-3.5 text-turmeric" />
-          <span className="text-[11px] sm:text-xs uppercase tracking-[0.25em] font-medium text-ivory-100">
+          <span className="text-[11px] sm:text-xs uppercase tracking-[0.25em] font-medium text-turmeric-light drop-shadow-sm">
             Threads of a Living Heritage • Mithila &amp; Kutch
           </span>
         </div>

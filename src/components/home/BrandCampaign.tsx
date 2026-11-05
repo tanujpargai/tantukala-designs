@@ -21,9 +21,9 @@ export const BrandCampaign: React.FC = () => {
       </div>
 
       <div className="relative z-10 max-w-[1520px] mx-auto px-4 sm:px-8 lg:px-12 xl:px-16 text-center">
-        <div className="inline-flex items-center space-x-2 px-4 py-1.5 rounded-full bg-white/10 border border-white/20 backdrop-blur-md mb-8">
+        <div className="inline-flex items-center space-x-2 mb-8">
           <Sparkles className="w-3.5 h-3.5 text-turmeric" />
-          <span className="text-[11px] uppercase tracking-[0.25em] font-semibold text-ivory-100">
+          <span className="text-[11px] uppercase tracking-[0.25em] font-semibold text-turmeric">
             The Tantukala Manifesto
           </span>
         </div>
