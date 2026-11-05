@@ -1,0 +1,93 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --font-serif: 'Fraunces', 'Playfair Display', Georgia, serif;
+  --font-sans: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+}
+
+body {
+  color: #24221F;
+  background-color: #F5F0E6;
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+  /* Authentic subtle organic kora cotton slub texture */
+  background-image: 
+    radial-gradient(rgba(182, 92, 67, 0.025) 1px, transparent 1px),
+    radial-gradient(rgba(36, 54, 74, 0.02) 1px, transparent 1px);
+  background-size: 24px 24px, 12px 12px;
+  background-position: 0 0, 6px 6px;
+}
+
+/* Custom Selection */
+::selection {
+  background-color: #B65C43;
+  color: #FFFFFF;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 7px;
+  height: 7px;
+}
+::-webkit-scrollbar-track {
+  background: #ECE4D4;
+}
+::-webkit-scrollbar-thumb {
+  background: #B65C43;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #964832;
+}
+
+/* Editorial Heading Enhancements */
+h1, h2, h3, .font-editorial {
+  font-family: var(--font-serif);
+  font-feature-settings: 'cv02', 'cv03', 'cv04', 'cv11';
+}
+
+/* Running Stitch Dashed Border (Sujni/Kantha Motifs) */
+.running-stitch-border {
+  border-image: repeating-linear-gradient(
+    to bottom,
+    #B65C43 0,
+    #B65C43 8px,
+    transparent 8px,
+    transparent 14px
+  ) 1;
+}
+
+.running-stitch-border-h {
+  border-image: repeating-linear-gradient(
+    to right,
+    #B65C43 0,
+    #B65C43 8px,
+    transparent 8px,
+    transparent 14px
+  ) 1;
+}
+
+/* Custom keyframes */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(6px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes shuttleMove {
+  0% { transform: translateX(-100%); }
+  50% { transform: translateX(100%); }
+  100% { transform: translateX(-100%); }
+}
+
+@keyframes verticalUnfurl {
+  from { transform: translateY(0%); }
+  to { transform: translateY(-100%); }
+}
+
+.animate-fade-in {
+  animation: fadeIn 0.4s ease-out forwards;
+}
