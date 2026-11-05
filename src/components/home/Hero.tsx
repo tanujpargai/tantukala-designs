@@ -7,7 +7,7 @@ import { ArrowDown, ArrowRight, Sparkles, Compass } from 'lucide-react';
 
 export const Hero: React.FC = () => {
   const scrollToNext = () => {
-    const el = document.getElementById('philosophy-section');
+    const el = document.getElementById('featured-collections-section');
     if (el) el.scrollIntoView({ behavior: 'smooth' });
   };
 

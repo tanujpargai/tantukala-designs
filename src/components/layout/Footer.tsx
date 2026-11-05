@@ -157,8 +157,18 @@ export const Footer: React.FC = () => {
                 </Link>
               </li>
               <li>
+                <Link href="/patterns" className="hover:text-terracotta transition-colors">
+                  The Art of Patterns
+                </Link>
+              </li>
+              <li>
                 <Link href="/craft" className="hover:text-terracotta transition-colors">
-                  The Regional Crafts
+                  The Regional Crafts &amp; Loom
+                </Link>
+              </li>
+              <li>
+                <Link href="/artisans" className="hover:text-terracotta transition-colors">
+                  Master Artisan Collective
                 </Link>
               </li>
               <li>

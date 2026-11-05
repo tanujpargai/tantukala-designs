@@ -3,7 +3,8 @@
 import React from 'react';
 import Link from 'next/link';
 import Image from 'next/image';
-import { ArrowRight, MapPin, Feather, Sparkles, Compass } from 'lucide-react';
+import { ArrowRight, ArrowLeft, MapPin, Feather, Sparkles, Compass } from 'lucide-react';
+import { CraftProcess } from '@/components/home/CraftProcess';
 
 export default function CraftPage() {
   const craftDisciplines = [
@@ -136,6 +137,37 @@ export default function CraftPage() {
               </div>
             );
           })}
+        </div>
+      </div>
+
+      {/* Interactive Craft Process Steps */}
+      <div className="mt-24">
+        <CraftProcess />
+      </div>
+
+      {/* Cultural Links */}
+      <div className="py-16 bg-ivory-50 border-t border-parchment text-center">
+        <div className="max-w-2xl mx-auto px-4 space-y-4">
+          <span className="text-xs uppercase tracking-widest text-turmeric font-bold block">
+            Explore Further
+          </span>
+          <h3 className="font-serif text-2xl text-charcoal">
+            Continue Your Journey Into Living Heritage
+          </h3>
+          <div className="pt-2 flex flex-wrap justify-center gap-4">
+            <Link
+              href="/patterns"
+              className="px-6 py-3 rounded-full bg-charcoal text-ivory-100 hover:bg-terracotta text-xs uppercase tracking-widest font-semibold transition-colors"
+            >
+              The Art of Patterns &rarr;
+            </Link>
+            <Link
+              href="/artisans"
+              className="px-6 py-3 rounded-full border border-charcoal/30 text-charcoal hover:bg-charcoal hover:text-white text-xs uppercase tracking-widest font-semibold transition-colors"
+            >
+              Our Master Artisans &rarr;
+            </Link>
+          </div>
         </div>
       </div>
     </div>

@@ -173,12 +173,30 @@ export const Navbar: React.FC = () => {
                 </Link>
 
                 <Link
+                  href="/patterns"
+                  className={`hover:text-terracotta transition-colors py-1 ${
+                    pathname.startsWith('/patterns') ? 'text-terracotta font-semibold' : ''
+                  }`}
+                >
+                  Patterns
+                </Link>
+
+                <Link
                   href="/craft"
                   className={`hover:text-terracotta transition-colors py-1 ${
                     pathname.startsWith('/craft') ? 'text-terracotta font-semibold' : ''
                   }`}
                 >
                   Our Craft
+                </Link>
+
+                <Link
+                  href="/artisans"
+                  className={`hover:text-terracotta transition-colors py-1 ${
+                    pathname.startsWith('/artisans') ? 'text-terracotta font-semibold' : ''
+                  }`}
+                >
+                  Artisans
                 </Link>
 
                 <Link
@@ -342,10 +360,22 @@ export const Navbar: React.FC = () => {
                   Collections
                 </Link>
                 <Link
+                  href="/patterns"
+                  className="block text-sm uppercase tracking-widest font-medium text-charcoal hover:text-terracotta"
+                >
+                  The Art of Patterns
+                </Link>
+                <Link
                   href="/craft"
                   className="block text-sm uppercase tracking-widest font-medium text-charcoal hover:text-terracotta"
                 >
                   Our Craft
+                </Link>
+                <Link
+                  href="/artisans"
+                  className="block text-sm uppercase tracking-widest font-medium text-charcoal hover:text-terracotta"
+                >
+                  Our Artisans
                 </Link>
                 <Link
                   href="/story"

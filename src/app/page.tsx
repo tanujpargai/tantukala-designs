@@ -1,12 +1,8 @@
 import React from 'react';
 import { Hero } from '@/components/home/Hero';
-import { Philosophy } from '@/components/home/Philosophy';
 import { FeaturedCollections } from '@/components/home/FeaturedCollections';
 import { Bestsellers } from '@/components/home/Bestsellers';
-import { PatternExhibition } from '@/components/home/PatternExhibition';
-import { ArtisanVoices } from '@/components/home/ArtisanVoices';
-import { CraftProcess } from '@/components/home/CraftProcess';
-import { BrandCampaign } from '@/components/home/BrandCampaign';
+import { HeritageSpotlight } from '@/components/home/HeritageSpotlight';
 import { TrustSection } from '@/components/home/TrustSection';
 
 export default function HomePage() {
@@ -15,28 +11,16 @@ export default function HomePage() {
       {/* 1. Immersive Hero */}
       <Hero />
 
-      {/* 2. Brand Philosophy */}
-      <Philosophy />
-
-      {/* 3. Featured Collections Gallery */}
+      {/* 2. Featured Regional Handloom Capsules */}
       <FeaturedCollections />
 
-      {/* 4. Shop Bestsellers */}
+      {/* 3. Shop Bestsellers Showcase */}
       <Bestsellers />
 
-      {/* 5. The Art of Patterns: Interactive Exhibition */}
-      <PatternExhibition />
+      {/* 4. Curatorial Heritage Portals (Direct doorways to dedicated /patterns, /craft, /artisans, /story) */}
+      <HeritageSpotlight />
 
-      {/* 6. Artisan Stories: Hands That Preserve Heritage */}
-      <ArtisanVoices />
-
-      {/* 7. Craftsmanship Process: Raw to Creation */}
-      <CraftProcess />
-
-      {/* 8. Brand Campaign Manifesto */}
-      <BrandCampaign />
-
-      {/* 9. Customer Trust & Authenticity Guarantees */}
+      {/* 5. Customer Trust & Authenticity Guarantees */}
       <TrustSection />
     </>
   );

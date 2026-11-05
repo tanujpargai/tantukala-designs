@@ -10,7 +10,7 @@ export const FeaturedCollections: React.FC = () => {
   const collections = initialCollections;
 
   return (
-    <section className="py-24 sm:py-32 bg-parchment-light/40 border-y border-parchment/60">
+    <section id="featured-collections-section" className="py-24 sm:py-32 bg-parchment-light/40 border-y border-parchment/60">
       <div className="max-w-[1520px] mx-auto px-4 sm:px-8 lg:px-12 xl:px-16">
         {/* Section Header */}
         <div className="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-6">

@@ -4,6 +4,7 @@ import React from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 import { Sparkles, ArrowRight, Compass, ShieldCheck, Heart } from 'lucide-react';
+import { BrandCampaign } from '@/components/home/BrandCampaign';
 
 export default function StoryPage() {
   return (
@@ -93,6 +94,11 @@ export default function StoryPage() {
           </div>
         </div>
 
+        {/* Brand Campaign Manifesto Banner */}
+        <div className="mb-24 rounded-3xl overflow-hidden shadow-craft">
+          <BrandCampaign />
+        </div>
+
         {/* Closing Action */}
         <div className="text-center max-w-xl mx-auto space-y-4">
           <h3 className="font-serif text-2xl text-charcoal font-medium">
@@ -101,12 +107,19 @@ export default function StoryPage() {
           <p className="text-xs text-charcoal/70">
             Every piece you select helps sustain an endangered Indian weaving lineage.
           </p>
-          <div className="pt-2">
+          <div className="pt-2 flex flex-wrap justify-center gap-4">
             <Link
               href="/shop"
               className="inline-flex items-center space-x-2 px-8 py-4 rounded-full bg-terracotta text-white font-semibold text-xs uppercase tracking-widest hover:bg-terracotta-dark transition-all shadow-md"
             >
               <span>Explore The Atelier</span>
+              <ArrowRight className="w-4 h-4" />
+            </Link>
+            <Link
+              href="/artisans"
+              className="inline-flex items-center space-x-2 px-8 py-4 rounded-full border border-charcoal/30 text-charcoal hover:bg-charcoal hover:text-white font-semibold text-xs uppercase tracking-widest transition-all"
+            >
+              <span>Meet The Artisans</span>
               <ArrowRight className="w-4 h-4" />
             </Link>
           </div>
